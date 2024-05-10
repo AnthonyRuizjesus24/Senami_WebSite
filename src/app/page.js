@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./globals.css";
+import Link from "next/link";
 
 export default function Inicio() {
 
@@ -24,17 +25,19 @@ export default function Inicio() {
           <p>BIENVENIDO A LA PAGINA SENAMHI DZ8 IQUITOS</p>
           <p>ESTAMOS TRABAJANDO PARA DARLES UN MEJOR SERVICIO</p>
           <p>GRACIAS POR SU VISITA</p>
-          <button
-            style={{
-              backgroundColor: 'lightblue',
-              padding: '10px',
-              fontSize: '16px',
-              fontWeight: 'bold',
-              color: '#fff',
-            }}
-          >
-            ir a la principal
-          </button>
+          <Link href="/page"> {/* Actualiza el enlace a la nueva página */}
+            <button
+              style={{
+                backgroundColor: 'lightblue',
+                padding: '10px',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                color: '#fff',
+              }}
+            >
+              ir a la principal
+            </button>
+          </Link>
         </section>
       </div>
       <div className="flex w-full justify-end">
