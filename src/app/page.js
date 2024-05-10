@@ -1,9 +1,8 @@
 import Image from "next/image";
 import "./globals.css";
 
-
 export default function Inicio() {
-  
+
   return (
     <main className="flex flex-col items-center" style={{ minHeight: '100vh', width: '100vw' }}>
       <header style={{ backgroundColor: 'lightblue', padding: '50px', width: '100%' }}>
