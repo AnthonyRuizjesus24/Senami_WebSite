@@ -11,7 +11,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* Aquí puedes incluir tus metadatos, estilos, scripts, etc. */}
+      </head>
+      <body className={inter.className} style={{ backgroundColor: 'white' }}>
+        <header>
+          {/* Aquí puedes colocar tu encabezado */}
+          <img src="/R.png" alt="Descripción de la imagen" style={{ width: '300px', height: 'auto' }} />
+        </header>
+        {children}
+        <footer>
+          {/* Aquí puedes colocar tu pie de página */}
+          <p>© 2024 Tu Empresa - Todos los derechos reservados</p>
+        </footer>
+      </body>
     </html>
   );
 }

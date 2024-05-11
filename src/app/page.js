@@ -1,65 +1,56 @@
 import Image from "next/image";
 import "./globals.css";
-import Link from "next/link";
+import Link from 'next/link';
+
 
 export default function Inicio() {
 
   return (
     <main className="flex flex-col items-center" style={{ minHeight: '100vh', width: '100vw' }}>
-      <header style={{ backgroundColor: 'lightblue', padding: '50px', width: '100%' }}>
-        <img src="/R.png" alt="Descripción de la imagen" style={{ width: '300px', height: 'auto' }} />
-      </header>
+      
       <div className="flex w-full justify-end">
-        <section
-          style={{
-            backgroundColor: 'lightgray',
-            padding: '50px',
-            width: '20%', // Modifica el ancho del contenedor aquí
-            flex: '1',
-            fontFamily: 'Arial, sans-serif',
-            fontSize: '18px',
-            fontWeight: 'bold',
-            color: '#333',
-          }}
+      <section
+  style={{
+    backgroundColor: 'lightgray',
+    padding: '20px',
+    width: '20%',
+    flex: '1',
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '1.2rem',
+    fontWeight: 'bold',
+    color: '#333',
+    backgroundImage: 'url("./.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    textAlign: 'center',
+    border: '2px solid #ccc',
+    borderRadius: '10px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+  }}
+>
+  <p>BIENVENIDO A LA PÁGINA SENAMHI DZ8 IQUITOS</p>
+  <p>ESTAMOS TRABAJANDO PARA BRINDARLES UN MEJOR SERVICIO</p>
+  <p>¡GRACIAS POR SU VISITA!</p>
+  <Link href="/dashboard">
+  Ir a la página de Acerca de
+</Link>
+</section>
+</div>
+<div className="flex w-full justify-end">
+<section
+    style={{
+      backgroundColor: '',
+      padding: '80px',
+      flex: '1',
+    }}
         >
-          <p>BIENVENIDO A LA PAGINA SENAMHI DZ8 IQUITOS</p>
-          <p>ESTAMOS TRABAJANDO PARA DARLES UN MEJOR SERVICIO</p>
-          <p>GRACIAS POR SU VISITA</p>
-          <Link href="/page"> {/* Actualiza el enlace a la nueva página */}
-            <button
-              style={{
-                backgroundColor: 'lightblue',
-                padding: '10px',
-                fontSize: '16px',
-                fontWeight: 'bold',
-                color: '#fff',
-              }}
-            >
-              ir a la principal
-            </button>
-          </Link>
-        </section>
-      </div>
-      <div className="flex w-full justify-end">
-        <section
-          style={{
-            backgroundColor: 'lightgray',
-            padding: '80px',
-            width: '50%',
-            flex: '1',
-          }}
-        >
-          <img
-            src="/SENAMHIDZ8.png"
-            alt="Imagen de reemplazo"
-            style={{
-              width: '100%',
-              height: 'auto',
-              '@media (max-width: 768px)': {
-                width: '80%',
-              },
-            }}
-          />
+          <Image
+      src="/SENAMHIDZ8.png"
+      alt="Imagen de reemplazo"
+      layout="responsive"
+      width={600} // Ajusta el valor de acuerdo a tus necesidades
+      height={400} // Ajusta el valor de acuerdo a tus necesidades
+    />
         </section>
       </div>
     </main>
