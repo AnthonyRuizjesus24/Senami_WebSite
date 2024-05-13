@@ -1,14 +1,14 @@
 import Link from 'next/link';
-
+import Layout from './layout';
 export default function DashboardPage() {
     return (
-        <>
+        <Layout>
             <p>¡Hola desde la página dashboardPage!</p>
-            <button>
+            <button className="custom-button">
                 <Link href="/">
                     Ir al Main
                 </Link>
             </button>
-        </>
+        </Layout>
     );
 }

@@ -3,6 +3,8 @@ import "./globals.css";
 import Link from 'next/link';
 
 
+
+
 export default function Inicio() {
 
   return (
@@ -31,9 +33,11 @@ export default function Inicio() {
   <p>BIENVENIDO A LA PÁGINA SENAMHI DZ8 IQUITOS</p>
   <p>ESTAMOS TRABAJANDO PARA BRINDARLES UN MEJOR SERVICIO</p>
   <p>¡GRACIAS POR SU VISITA!</p>
-  <Link href="/dashboard">
-  Ir a la página de Acerca de
-</Link>
+  <button className="custom-button">
+    <Link href="/dashboard">
+        Ir a principal
+    </Link>
+    </button>
 </section>
 </div>
 <div className="flex w-full justify-end">
@@ -53,6 +57,15 @@ export default function Inicio() {
     />
         </section>
       </div>
+
+
+      <div className="container">
+  <div className="image-container">
+    
+  </div>
+  <p>Este es un nuevo contenedor</p>
+  <p>Puedes agregar más contenido aquí</p>
+</div>
     </main>
   );
 }
