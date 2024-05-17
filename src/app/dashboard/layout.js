@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
       </main>
       <footer>
         {/* Aquí puedes agregar tu pie de página */}
+        
       </footer>
     </div>
   );

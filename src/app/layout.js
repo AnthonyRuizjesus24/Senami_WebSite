@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
         <header>
           {/* Aquí puedes colocar tu encabezado */}
           <img src="/R.png" alt="Descripción de la imagen" style={{ width: '300px', height: 'auto' }} />
+          
         </header>
         {children}
         <footer>
