@@ -1,7 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.menu-icon {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+  color: #1b64d8; /* Color del icono */
+  font-size: 10px; /* Tamaño del icono */
+  vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+}
+.menu {
+  background-color: #333;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ancho de la lista del menú */
+}
 
+.menu {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; /* Ancho del contenedor del menú */
+}
+
+.menu li {
+  margin: 10px 0;
+  width: 100%; /* Ancho de cada elemento del menú */
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  display: block; /* Hace que el enlace ocupe todo el ancho del elemento */
+}
+
+.menu a:hover {
+  background-color: #534f8d;
+}
 .container {
   max-width: 1650px;
   height: 500px;
